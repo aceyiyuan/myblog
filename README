@@ -8,6 +8,6 @@ username: admin
 password: pass
 
 functions:
-add, delete, update, hide, publish blog
+add, delete, update, hide (save as a draft ) or publish blog
 allow login users publish comments, review, hide or publish
 
