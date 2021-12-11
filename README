@@ -7,3 +7,7 @@ Demo: https://demo-herokublog.herokuapp.com/blog/
 username: admin
 password: pass
 
+functions:
+add, delete, update, hide, publish blog
+allow login users publish comments, review, hide or publish
+
