@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+	{% if inputinsearchbar %}
+	{% for post in posts %}
+		<!-- <a href ="{% url 'post_detail' pk=post.pk %}">{{post}}</a>-{{post.author}}<br/>  -->
+		<a href ="{% url 'post_detail' pk=post.pk %}">{{post}}</a>-{{post.author}}<br/> 
+	{% empty %}   
+		<p>hmm, embarrasing, we don't have such a result ....</p>
+	{% endfor %}
+	{% else %}
+		<h1>Are you sure you input any search words?</h1>
+	{% endif %}
+{% endblock %}
+
